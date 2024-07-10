@@ -1,0 +1,67 @@
+:root {
+  --worksans-font: 'WorkSans', sans-serif;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/workSans/WorkSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/workSans/WorkSans-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/workSans/WorkSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: italic;
+  font-weight: 500;
+  src: url('./fonts/workSans/WorkSans-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/workSans/WorkSans-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: italic;
+  font-weight: 600;
+  src: url('./fonts/workSans/WorkSans-SemiBoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/workSans/WorkSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: italic;
+  font-weight: 700;
+  src: url('./fonts/workSans/WorkSans-BoldItalic.woff2') format('woff2');
+}
