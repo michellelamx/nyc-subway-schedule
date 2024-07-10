@@ -42,7 +42,9 @@ h2 {
     }
 
     &:focus-visible {
-      outline: hsl(201, 95%, 69%) auto 1px;
+      box-shadow: 0;
+      outline: 1px solid hsl(201, 95%, 69%);
+      outline-offset: 0;
     }
   }
 }
