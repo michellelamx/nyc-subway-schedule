@@ -34,7 +34,9 @@ export default function App() {
           id: Number(id),
           name: (station as Station).name,
         }))
+        stationsArray.sort((a, b) => a.name.localeCompare(b.name))
         setStations(stationsArray)
+        console.log('Stations set:', stationsArray)
       })
   }, [])
 
@@ -103,10 +105,10 @@ export default function App() {
                 {northArrivalTimes.length > 0 && (
                   <>
                     <h2>Northbound Arrival Times:</h2>
-                    {northArrivalTimes.map((time, index) => {
+                    {northArrivalTimes.map((time) => {
                       const dateObject = parseISO(time);
                       const formattedTime = format(dateObject, 'h:mm a');
-                      return <div key={index} className='time'>{formattedTime}</div>;
+                      return <div key={time} className='time'>{formattedTime}</div>;
                     })}
                   </>
                 )}
@@ -115,10 +117,10 @@ export default function App() {
                 {southArrivalTimes.length > 0 && (
                   <>
                     <h2>Southbound Arrival Times:</h2>
-                    {southArrivalTimes.map((time, index) => {
+                    {southArrivalTimes.map((time) => {
                       const dateObject = parseISO(time);
                       const formattedTime = format(dateObject, 'h:mm a');
-                      return <div key={index} className='time'>{formattedTime}</div>;
+                      return <div key={time} className='time'>{formattedTime}</div>;
                     })}
                   </>
                 )}
